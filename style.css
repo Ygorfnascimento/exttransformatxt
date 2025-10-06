@@ -5,16 +5,17 @@
     
     /* Chamando a fonte */
     font-family: "Inter", sans-serif;
-    font-size: 12px;
+    font-size: 0.85rem;
 
-    /* Bordas */
-    border: solid 1px rgb(58, 39, 39);
 }
 
 /* Layout do app */
 .container-pai {
     width: 200px;
     height: 200px;
+
+    /* Bordas */
+    border: solid 1px rgb(24, 20, 20);
     
     /* Flex-Box */
     display: flex;
