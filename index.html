@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+
     <title>Transformar Textos</title>
-</head>
-<body>
-    <h1> Olá, seja bem-vindo(a)</h1>
-</body>
+  </head>
+  <body>
+    <!-- Estrutura do Programa -->
+    <div class="container-pai">
+        <header class="cabeçalho">
+            <input type="text" name="text" id="input-text" class="input-text" maxlength="500" placeholder="Digite seu texto aqui" required>
+
+            <div class="container button">
+                <button>MAIÚSCULAS</button>
+                <button>minúsculas</button>
+            </div>
+
+            <div name="resultado" id="resultado" class="resultado">
+                Resultado:
+            </div>
+
+        </header>
+
+    </div>
+    <!-- Link do JavaScript -->
+    <script src="scripts.js"></script>
+  </body>
 </html>
