@@ -1,0 +1,10 @@
+{
+    "name": "Transformar Textos",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Está descrição serve para transformar seus textos em letras MAIÚSCULAS ou minúsculas.",
+    "action": {
+      "default_popup": "index.html"
+    }
+      
+}
