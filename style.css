@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    /* Chamando a fonte */
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+
+    /* Bordas */
+    border: solid 1px rgb(58, 39, 39);
+}
+
+/* Layout do app */
+.container-pai {
+    width: 200px;
+    height: 200px;
+    
+    /* Flex-Box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+}
+
+/* Configuração dos botões */
+.container-button {
+    width: 200px;
+    padding: 5px 0;
+
+    /* Flex-Box */
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+}
+
+/* Estilo dos botões */
+.btn {
+    cursor: pointer;
+    width: 90px;
+    padding: 3px;
+    border-radius: 6px;
+    margin: 0 2px;  
+}
