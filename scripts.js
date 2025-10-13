@@ -6,14 +6,14 @@ window.document.addEventListener("DOMContentLoaded", function () {
     .querySelector("#btnMaiuscula")
     .addEventListener("click", function () {
       let inputText = document.querySelector("#input-text").value;
-      document.querySelector("#resultado").innerHTML = inputText.toUpperCase();
+      document.querySelector("#result").innerHTML = inputText.toUpperCase();
     });
 
-    /* Botão Letra Minúscula */
+  /* Botão Letra Minúscula */
   window.document
     .querySelector("#btnMinuscula")
     .addEventListener("click", function () {
       let inputText = document.querySelector("#input-text").value;
-      document.querySelector("#resultado").innerHTML = inputText.toLowerCase();
+      document.querySelector("#result").innerHTML = inputText.toLowerCase();
     });
 });

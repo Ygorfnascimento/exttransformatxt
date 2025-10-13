@@ -7,28 +7,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css">
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Transformar Textos</title>
   </head>
   <body>
     <!-- Estrutura do Programa -->
     <div class="container-pai">
-        <header class="cabeçalho">
-            <input type="text" name="text" id="input-text" class="input-text" maxlength="500" placeholder="Digite seu texto aqui" required>
+      <header class="cabeçalho">
+        <div class="titulo_logo">
+          <img src="./icons/logo.png" width="20px" height="20px" />
+          TRANSFORME textos
+        </div>
 
-            <div class="container-button">
-                <button type="button" class="btn" id="btnMaiuscula">MAIÚSCULAS</button>
-                <button type="button" class="btn" id="btnMinuscula">minúsculas</button>
-            </div>
+        <input
+          type="text"
+          name="text"
+          id="input-text"
+          class="input-text"
+          maxlength="500"
+          placeholder="Digite seu texto aqui"
+          required
+        />
 
-            <div name="resultado" id="resultado" class="resultado">
-                Resultado:
-            </div>
+        <div class="container-button">
+          <button type="button" class="btn" id="btnMaiuscula">
+            MAIÚSCULAS
+          </button>
+          <button type="button" class="btn" id="btnMinuscula">
+            minúsculas
+          </button>
+        </div>
+        <div name="result" id="result" class="result">
+          <div class="rr">Resultado:</div>
+        </div>
 
-        </header>
-
+        <div class="opcao">
+          Entre no link -
+          <a href="https://github.com/Ygorfnascimento/" target="_blank"
+            >Clique aqui
+          </a>
+        </div>
+      </header>
     </div>
     <!-- Link do JavaScript -->
     <script src="scripts.js"></script>

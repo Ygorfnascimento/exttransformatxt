@@ -1,46 +1,81 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-    /* Chamando a fonte */
-    font-family: "Inter", sans-serif;
-    font-size: 0.85rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
+  /* Chamando a fonte */
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
 }
 
 /* Layout do app */
 .container-pai {
-    width: 200px;
-    height: 200px;
+  width: 250px;
+  height: 250px;
 
-    /* Bordas */
-    border: solid 1px rgb(24, 20, 20);
-    
-    /* Flex-Box */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;  
+  /* Bordas */
+  border: solid 1px rgb(24, 20, 20);
+
+  /* Flex-Box */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.titulo_logo {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 30%;
+  gap: 3%;
+  margin-left: -7px;
+  align-items: center;
+  font-weight: 600;
 }
 
 /* Configuração dos botões */
 .container-button {
-    width: 200px;
-    padding: 5px 0;
+  width: 200px;
+  padding: 8px 0;
 
-    /* Flex-Box */
-    display: flex;
-    justify-content: center;  
-    align-items: center;      
+  /* Flex-Box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Estilo dos botões */
 .btn {
-    cursor: pointer;
-    width: 90px;
-    padding: 3px;
-    border-radius: 6px;
-    margin: 0 2px;  
+  cursor: pointer;
+  width: 40%;
+  padding: 3px;
+  border-radius: 6px;
+  margin: 0 2px;
+  font-size: 10px;
+}
+
+.result {
+  border: solid 1px #000;
+  width: 79.8%;
+  height: 50%;
+  border-radius: 5px;
+  border-color: #000;
+  margin-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.rr {
+    margin-left: 3px;
+    color: rgb(80, 78, 75);
+}
+
+.opcao {
+  margin-top: 5px;
 }
