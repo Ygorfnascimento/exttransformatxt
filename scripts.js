@@ -16,4 +16,13 @@ window.document.addEventListener("DOMContentLoaded", function () {
       let inputText = document.querySelector("#input-text").value;
       document.querySelector("#result").innerHTML = inputText.toLowerCase();
     });
+
+  /* Botão 1° Letra Maiscúla */
+  window.document
+    .querySelector("#btnletra")
+    .addEventListener("click", function () {
+      let inputText = document.querySelector("#input-text").value;
+      let result = inputText.charAt(0).toUpperCase() + inputText.toLowerCase().slice(1);
+      document.querySelector("#result").innerHTML = result;
+    });
 });
