@@ -25,4 +25,12 @@ window.document.addEventListener("DOMContentLoaded", function () {
       let result = inputText.charAt(0).toUpperCase() + inputText.toLowerCase().slice(1);
       document.querySelector("#result").innerHTML = result;
     });
+
+    /* Botão Limpar */
+ window.document
+    .querySelector("#btnlimpar")
+    .addEventListener("click", function () {
+      let inputText = document.querySelector("#input-text").value;
+      document.querySelector("#result").innerHTML = inputText.value='';
+    });
 });
