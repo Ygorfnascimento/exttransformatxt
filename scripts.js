@@ -19,12 +19,20 @@ window.document.addEventListener("DOMContentLoaded", function () {
 
   /* Botão 1° Letra Maiscúla */
   window.document
-    .querySelector("#btnletra")
-    .addEventListener("click", function () {
-      let inputText = document.querySelector("#input-text").value;
-      let result = inputText.charAt(0).toUpperCase() + inputText.toLowerCase().slice(1);
-      document.querySelector("#result").innerHTML = result;
+  .querySelector("#btnletra")
+  .addEventListener("click", function () {
+    let inputText = document.querySelector("#input-text").value;
+
+    let sentences = inputText.split(".").map(sentence => {
+      sentence = sentence.trim(); 
+      if (sentence.length === 0) return "";
+      return sentence.charAt(0).toUpperCase() + sentence.slice(1).toLowerCase();
     });
+
+    let result = sentences.join(". ");
+
+    document.querySelector("#result").innerHTML = result;
+  });
 
     /* Botão Limpar */
  window.document
