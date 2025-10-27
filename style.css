@@ -1,0 +1,94 @@
+/* Reset e configuração global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+}
+
+/* Layout principal */
+.container-pai {
+  width: 320px;
+  height: auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Título e logo */
+.titulo_logo {
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 3%;
+  margin-left: -10px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Campo de texto */
+.input-text {
+  width: 91%;
+  padding: 6px;
+  border: 1px solid #201f1f;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  margin-left: -15px;
+}
+
+/* Container dos botões */
+.container-button {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+/* Estilo dos botões */
+.btn {
+  cursor: pointer;
+  width: 82%;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 10px;
+  border: 1px solid #7c7c7c;
+}
+
+/* Área de resultado */
+.result {
+  width: 90%;
+  min-height: 60px;
+  border: 1px solid #201f1f;
+  border-radius: 3px;
+  display: flex;
+  align-items: flex-start; /* <-- Alinha o texto no topo */
+  justify-content: flex-start; /* opcional: garante alinhamento à esquerda */
+  padding: 5px;
+  margin-top: -3px;
+}
+
+/* Texto do resultado */
+.rr {
+  margin-top: 4px; /* pequena margem superior */
+  margin-left: 2px;
+  color: rgb(124, 121, 117);
+  font-size: 0.85rem;
+}
+
+
+/* Outras opções */
+.opcao {
+  margin-top: 5px;
+  font-size: 0.75rem;
+}
