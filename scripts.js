@@ -17,24 +17,28 @@ window.document.addEventListener("DOMContentLoaded", function () {
       document.querySelector("#result").innerHTML = inputText.toLowerCase();
     });
 
-  /* Botão 1° Letra Maiscúla */
+  /* Botão 1ª Letra Maiscúla */
   window.document
   .querySelector("#btnletra")
   .addEventListener("click", function () {
     let inputText = document.querySelector("#input-text").value;
 
-    let sentences = inputText.split(".").map(sentence => {
-      sentence = sentence.trim(); 
-      if (sentence.length === 0) return "";
-      return sentence.charAt(0).toUpperCase() + sentence.slice(1).toLowerCase();
+    let sentences = inputText.split(/([.!?;])/).map((part, i, arr) => {
+      part = part.trim();
+
+      if ([".", "!", "?", ";"].includes(part) || part.length === 0) {
+        return part;
+      }
+
+      return part.charAt(0).toUpperCase() + part.slice(1).toLowerCase();
     });
 
-    let result = sentences.join(". ");
+    let result = sentences.join("").replace(/([.!?;])\s*/g, "$1 ");
 
     document.querySelector("#result").innerHTML = result;
   });
 
-    /* Botão Limpar */
+  /* Botão Limpar */
  window.document
     .querySelector("#btnlimpar")
     .addEventListener("click", function () {
