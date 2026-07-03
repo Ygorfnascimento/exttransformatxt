@@ -1,24 +1,37 @@
-# 🧩 Extensão Primária - Monitor de Aprendizado
+# 🧩 Extensão Primária - Transformador de Texto
 
-> **Painel de controle via extensão de navegador (Manifest V3) para gerenciar o progresso e a consistência nos estudos diários de Python.**
+Uma extensão de navegador (Manifest V3) simples e produtiva feita para transformar e formatar textos instantaneamente diretamente pelo painel popup.
 
 ---
 
 ## 🎯 Objetivo do Projeto
 
-A **Extensão Primária** foi desenvolvida para funcionar como o painel de controle visual do seu ecossistema de estudos. Ela automatiza o monitoramento do roteiro cronológico de exercícios, permitindo que o desenvolvedor visualize metas diárias, valide o status de conclusão dos scripts em Python e mantenha a consistência de código diretamente através do navegador, sem quebrar o fluxo de trabalho.
+A **Extensão Primária** foi desenvolvida para agilizar o fluxo de trabalho de desenvolvedores, redatores e usuários comuns. Ela elimina a necessidade de acessar sites externos para formatar strings, permitindo converter textos para maiúsculas, minúsculas e aplicar outras funções utilitárias diretamente na barra de ferramentas do seu navegador.
 
 ---
 
+## 📂 Estrutura de Arquivos
+
+```bash
+Extensao_Primaria-main/
+├── 📂 icons/               # Assets visuais da extensão (16x16, 48x48, 128x128 e logo)
+├── 📄 index.html           # Interface visual do Popup (campo de texto e botões)
+├── 📄 manifest.json        # Configuração nativa e metadados da extensão (V3)
+├── 📄 scripts.js           # Funções de transformação de string e manipulação do DOM
+└── 📄 style.css            # Layout moderno e responsiva do painel de controle.
+```
+
 ## 🛠️ Tecnologias
 
-- **Manifest V3** (Padrão moderno de extensões)
-- **Web nativa:** HTML5, CSS3 e JavaScript 
+- **Manifest V3** (O padrão mais moderno, seguro e performático de extensões)
+- **Web nativa:** HTML5, CSS3 e JavaScript
+
 ---
 
 ## ⚙️ Instalação Rápida
 
 1. Baixe e extraia o arquivo `Extensao_Primaria-main.zip`.
-2. No navegador (Chrome, Brave, Edge), acesse `chrome://extensions/`.
-3. Ative o **"Modo do desenvolvedor"** (canto superior direito).
-4. Clique em **"Carregar sem compactação"** e selecione a pasta raiz `Extensao_Primaria-main`.
+2. No seu navegador baseado em Chromium (Chrome, Brave, Edge, Opera), acesse `chrome://extensions/`.
+3. Ative o **"Modo do desenvolvedor"** no canto superior direito.
+4. Clique em **"Carregar sem compactação"** (Load Unpacked) no canto superior esquerdo.
+5. Selecione a pasta raiz `Extensao_Primaria-main` (a pasta que contém o arquivo `manifest.json`).
